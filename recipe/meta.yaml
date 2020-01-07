@@ -21,7 +21,7 @@ requirements:
     - pip
     - python
   run:
-    - coverage
+    - coverage <5.0.0a0
     - python
     - six
 
