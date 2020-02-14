@@ -26,11 +26,14 @@ requirements:
     - six
 
 test:
+  requires:
+    - pip
   imports:
     - testflo
   commands:
     - testflo --help
     - testflo testflo.test -v
+    - pip check
 
 about:
   home: http://openmdao.org
