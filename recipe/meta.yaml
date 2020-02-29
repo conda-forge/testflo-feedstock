@@ -1,5 +1,5 @@
 {% set name = "testflo" %}
-{% set version = "1.3.6" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name }}
@@ -7,23 +7,22 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bf6df831832f0d5165009d7af55ca29dc3882629b4fd314ff05601ad15473d95
+  sha256: 5c0e34d211b9129c1b0542884d95d1b388cf48b68a2a67f16ba23cb086551310
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - testflo = testflo.main:main
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5
   run:
     - coverage <5.0.0a0
-    - python
-    - six
+    - python >=3.5
 
 test:
   requires:
