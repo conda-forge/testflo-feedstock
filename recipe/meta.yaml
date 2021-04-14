@@ -30,9 +30,8 @@ test:
   imports:
     - testflo
   commands:
-    - testflo --help
-    - testflo testflo.test -v
     - pip check
+    - testflo --help
 
 about:
   home: http://openmdao.org
