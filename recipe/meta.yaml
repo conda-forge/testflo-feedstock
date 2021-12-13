@@ -1,5 +1,5 @@
 {% set name = "testflo" %}
-{% set version = "1.4.6" %}
+{% set version = "1.4.7" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5e6881d15628bb1c712884c33a7fdeb584490937b701e44a837c8a965fb5cdb2
+  sha256: e79418b295b5e886c9a63f0e056a16b9b3a291976a6cc529e163c720ce22daf9
 
 build:
   noarch: python
