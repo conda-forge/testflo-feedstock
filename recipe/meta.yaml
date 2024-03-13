@@ -17,9 +17,11 @@ build:
 
 requirements:
   host:
+    - hatchling
     - pip
     - python >=3.5
   run:
+    - setuptools
     - coverage >=6.0
     - python >=3.5
 
