@@ -1,4 +1,4 @@
-{% set version = "1.4.19" %}
+{% set version = "1.4.20" %}
 
 package:
   name: testflo
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/testflo/testflo-{{ version }}.tar.gz
-  sha256: 7783bf47c69dab9b533dfeb275e52f497657465f9d19e4632d2fe4bcd1a808e7
+  sha256: 46dd0de0556817fc7cc566c5817803c3242bac312545fb1571239be0796fae28
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
