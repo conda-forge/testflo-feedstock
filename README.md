@@ -3,7 +3,7 @@ About testflo-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/testflo-feedstock/blob/main/LICENSE.txt)
 
-Home: http://openmdao.org
+Home: http://openmdao.org/
 
 Package license: Apache-2.0
 
