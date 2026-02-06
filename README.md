@@ -3,13 +3,15 @@ About testflo-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/testflo-feedstock/blob/main/LICENSE.txt)
 
-Home: http://openmdao.org/
+Home: https://pypi.org/project/testflo
 
 Package license: Apache-2.0
 
 Summary: A simple flow-based testing framework
 
 Development: https://github.com/OpenMDAO/testflo
+
+Documentation: http://openmdao.org/
 
 Current build status
 ====================
