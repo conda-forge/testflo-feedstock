@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.4.21"
+  version: "1.4.22"
   python_check_max: "3.14"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/testflo/testflo-${{ version }}.tar.gz
-  sha256: cb3bbd6183afd97f48308dfc4eabe99d7a85e73e3fb1eb49eb6ac40fd28fcfe4
+  sha256: 2564db7eca3b87c4975cd99b8a90ad1d8274c24bbd6b5f2679626b6451aadef9
 
 build:
   number: 0
