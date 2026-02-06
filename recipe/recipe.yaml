@@ -2,7 +2,8 @@
 schema_version: 1
 
 context:
-  version: 1.4.20
+  version: "1.4.21"
+  python_check_max: "3.14"
 
 package:
   name: testflo
@@ -10,12 +11,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/testflo/testflo-${{ version }}.tar.gz
-  sha256: 46dd0de0556817fc7cc566c5817803c3242bac312545fb1571239be0796fae28
+  sha256: cb3bbd6183afd97f48308dfc4eabe99d7a85e73e3fb1eb49eb6ac40fd28fcfe4
 
 build:
   number: 0
   noarch: python
-  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  script:
+    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
   python:
     entry_points:
       - testflo = testflo.main:main
@@ -35,7 +37,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - 3.13.*
+        - ${{ python_check_max }}.*
   - requirements:
       run:
         - python ${{ python_min }}.*
@@ -46,7 +48,8 @@ about:
   license: Apache-2.0
   license_file: LICENSE.txt
   summary: A simple flow-based testing framework
-  homepage: http://openmdao.org
+  homepage: https://pypi.org/project/testflo
+  documentation: http://openmdao.org
   repository: https://github.com/OpenMDAO/testflo
 
 extra:
